@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -10,77 +9,77 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
 :root {
-–bg: #f0f4f8;
-–surface: #ffffff;
-–surface2: #f8fafc;
-–border: #e4eaf2;
-–text: #1e2638;
-–text2: #64748b;
-–text3: #94a3b8;
-–green: #16a34a;
-–green-lt: #dcfce7;
-–green-md: #86efac;
-–blue: #2563eb;
-–blue-lt: #dbeafe;
-–amber: #d97706;
-–amber-lt: #fef3c7;
-–red: #dc2626;
-–red-lt: #fee2e2;
-–purple: #7c3aed;
-–cyan: #0891b2;
-–orange: #ea580c;
-–pink: #db2777;
-–teal: #0d9488;
-–radius: 14px;
-–radius-sm: 9px;
-–shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-–shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --bg: #f0f4f8;
+  --surface: #ffffff;
+  --surface2: #f8fafc;
+  --border: #e4eaf2;
+  --text: #1e2638;
+  --text2: #64748b;
+  --text3: #94a3b8;
+  --green: #16a34a;
+  --green-lt: #dcfce7;
+  --green-md: #86efac;
+  --blue: #2563eb;
+  --blue-lt: #dbeafe;
+  --amber: #d97706;
+  --amber-lt: #fef3c7;
+  --red: #dc2626;
+  --red-lt: #fee2e2;
+  --purple: #7c3aed;
+  --cyan: #0891b2;
+  --orange: #ea580c;
+  --pink: #db2777;
+  --teal: #0d9488;
+  --radius: 14px;
+  --radius-sm: 9px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 body {
-font-family: ‘Plus Jakarta Sans’, sans-serif;
-background: var(–bg);
-color: var(–text);
-min-height: 100vh;
-padding: 0 0 88px;
-overflow-x: hidden;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 0 0 88px;
+  overflow-x: hidden;
 }
 
 /* ── HEADER ── */
 .app-header {
-background: var(–surface);
-border-bottom: 1px solid var(–border);
-padding: 14px 18px 12px;
-text-align: center;
-position: sticky;
-top: 0;
-z-index: 50;
-box-shadow: var(–shadow);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 18px 12px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--shadow);
 }
 .app-header h1 {
-font-family: ‘Playfair Display’, serif;
-font-size: 1.35rem;
-font-weight: 800;
-background: linear-gradient(135deg, var(–green), var(–cyan));
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--green), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-.app-header p { font-size: 0.7rem; color: var(–text3); margin-top: 1px; font-weight: 500; }
+.app-header p { font-size: 0.7rem; color: var(--text3); margin-top: 1px; font-weight: 500; }
 
 /* ── BOTTOM NAV ── */
 .bottom-nav {
-position: fixed; bottom: 0; left: 0; right: 0;
-background: var(–surface);
-border-top: 1px solid var(–border);
-display: flex;
-z-index: 100;
-padding-bottom: env(safe-area-inset-bottom);
-box-shadow: 0 -2px 16px rgba(0,0,0,0.07);
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  display: flex;
+  z-index: 100;
+  padding-bottom: env(safe-area-inset-bottom);
+  box-shadow: 0 -2px 16px rgba(0,0,0,0.07);
 }
-.bnav { flex: 1; padding: 9px 4px 7px; text-align: center; cursor: pointer; color: var(–text3); font-size: 0.58rem; font-weight: 600; letter-spacing: 0.3px; transition: color 0.2s; }
+.bnav { flex: 1; padding: 9px 4px 7px; text-align: center; cursor: pointer; color: var(--text3); font-size: 0.58rem; font-weight: 600; letter-spacing: 0.3px; transition: color 0.2s; }
 .bnav .bi { font-size: 1.25rem; display: block; margin-bottom: 2px; }
-.bnav.on { color: var(–green); }
+.bnav.on { color: var(--green); }
 
 /* ── PAGE WRAPPER ── */
 .page { display: none; padding: 16px; }
@@ -88,56 +87,56 @@ box-shadow: 0 -2px 16px rgba(0,0,0,0.07);
 
 /* ── CARDS ── */
 .card {
-background: var(–surface);
-border: 1px solid var(–border);
-border-radius: var(–radius);
-padding: 15px;
-margin-bottom: 12px;
-box-shadow: var(–shadow);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 15px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow);
 }
 
 /* ── SECTION LABEL ── */
 .slabel {
-font-size: 0.67rem;
-font-weight: 700;
-text-transform: uppercase;
-letter-spacing: 1.2px;
-color: var(–text3);
-margin: 20px 0 8px;
-display: block;
+  font-size: 0.67rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--text3);
+  margin: 20px 0 8px;
+  display: block;
 }
 .slabel:first-child { margin-top: 0; }
 
 /* ── STATS ROW ── */
 .stats-row { display: flex; gap: 8px; margin-bottom: 12px; }
 .stat {
-flex: 1; background: var(–surface); border: 1px solid var(–border);
-border-radius: var(–radius-sm); padding: 11px 6px; text-align: center;
-box-shadow: var(–shadow);
+  flex: 1; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 11px 6px; text-align: center;
+  box-shadow: var(--shadow);
 }
-.stat-n { font-family: ‘Playfair Display’, serif; font-size: 1.45rem; font-weight: 700; color: var(–green); line-height: 1; }
-.stat-n.blue { color: var(–blue); }
-.stat-n.amber { color: var(–amber); }
-.stat-l { font-size: 0.62rem; color: var(–text3); margin-top: 3px; font-weight: 500; }
+.stat-n { font-family: 'Playfair Display', serif; font-size: 1.45rem; font-weight: 700; color: var(--green); line-height: 1; }
+.stat-n.blue { color: var(--blue); }
+.stat-n.amber { color: var(--amber); }
+.stat-l { font-size: 0.62rem; color: var(--text3); margin-top: 3px; font-weight: 500; }
 
 /* ── PROGRESS BAR ── */
 .prog-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 7px; }
 .prog-lbl { font-weight: 600; font-size: 0.84rem; }
-.prog-pct { font-size: 0.84rem; color: var(–green); font-weight: 700; }
+.prog-pct { font-size: 0.84rem; color: var(--green); font-weight: 700; }
 .prog-track { height: 7px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
-.prog-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(–green), var(–teal)); transition: width 0.4s ease; }
+.prog-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--green), var(--teal)); transition: width 0.4s ease; }
 
 /* ── PHASE BOX ── */
 .phase {
-border-radius: var(–radius-sm); padding: 11px 13px; margin-bottom: 12px; border: 1px solid;
-font-size: 0.77rem; line-height: 1.55; color: var(–text2);
+  border-radius: var(--radius-sm); padding: 11px 13px; margin-bottom: 12px; border: 1px solid;
+  font-size: 0.77rem; line-height: 1.55; color: var(--text2);
 }
 .phase.g { background: linear-gradient(135deg,#f0fdf4,#dcfce7); border-color: #86efac; }
 .phase.b { background: linear-gradient(135deg,#eff6ff,#dbeafe); border-color: #93c5fd; }
 .phase-tag {
-display: inline-block; font-size: 0.63rem; font-weight: 700;
-text-transform: uppercase; letter-spacing: 1px;
-padding: 2px 8px; border-radius: 20px; margin-bottom: 5px;
+  display: inline-block; font-size: 0.63rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1px;
+  padding: 2px 8px; border-radius: 20px; margin-bottom: 5px;
 }
 .phase-tag.g { background: #bbf7d0; color: #15803d; }
 .phase-tag.b { background: #bfdbfe; color: #1d4ed8; }
@@ -146,109 +145,1104 @@ padding: 2px 8px; border-radius: 20px; margin-bottom: 5px;
 .ttabs { display: flex; gap: 5px; overflow-x: auto; padding-bottom: 3px; margin-bottom: 14px; scrollbar-width: none; }
 .ttabs::-webkit-scrollbar { display: none; }
 .ttab {
-padding: 6px 12px; border-radius: 8px; font-size: 0.73rem; font-weight: 600;
-white-space: nowrap; cursor: pointer; border: 1px solid var(–border);
-background: var(–surface); color: var(–text2); transition: all 0.15s;
+  padding: 6px 12px; border-radius: 8px; font-size: 0.73rem; font-weight: 600;
+  white-space: nowrap; cursor: pointer; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text2); transition: all 0.15s;
 }
-.ttab.on { background: var(–green); color: #fff; border-color: var(–green); }
+.ttab.on { background: var(--green); color: #fff; border-color: var(--green); }
 
 /* ── TASK ITEMS ── */
 .task-list { display: flex; flex-direction: column; gap: 7px; }
 .task {
-background: var(–surface); border: 1px solid var(–border);
-border-radius: var(–radius-sm); padding: 11px 12px;
-display: flex; align-items: flex-start; gap: 10px;
-cursor: pointer; transition: all 0.15s; box-shadow: var(–shadow);
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 11px 12px;
+  display: flex; align-items: flex-start; gap: 10px;
+  cursor: pointer; transition: all 0.15s; box-shadow: var(--shadow);
 }
 .task:active { transform: scale(0.985); }
 .task.done { background: #f0fdf4; border-color: #bbf7d0; opacity: 0.55; }
-.task.done .chk { background: var(–green); border-color: var(–green); }
+.task.done .chk { background: var(--green); border-color: var(--green); }
 .chk {
-width: 19px; height: 19px; min-width: 19px; border-radius: 5px;
-border: 2px solid #cbd5e1; display: flex; align-items: center;
-justify-content: center; margin-top: 1px; font-size: 0.65rem;
-font-weight: 700; color: #fff; transition: all 0.15s;
+  width: 19px; height: 19px; min-width: 19px; border-radius: 5px;
+  border: 2px solid #cbd5e1; display: flex; align-items: center;
+  justify-content: center; margin-top: 1px; font-size: 0.65rem;
+  font-weight: 700; color: #fff; transition: all 0.15s;
 }
 .task-body { flex: 1; }
 .task-name { font-weight: 600; font-size: 0.84rem; line-height: 1.3; }
-.task-detail { color: var(–text2); font-size: 0.72rem; margin-top: 2px; line-height: 1.35; }
+.task-detail { color: var(--text2); font-size: 0.72rem; margin-top: 2px; line-height: 1.35; }
 .task-right { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
-.task-time { font-size: 0.63rem; font-weight: 600; color: var(–text3); background: var(–surface2); padding: 2px 6px; border-radius: 5px; white-space: nowrap; }
+.task-time { font-size: 0.63rem; font-weight: 600; color: var(--text3); background: var(--surface2); padding: 2px 6px; border-radius: 5px; white-space: nowrap; }
 .badge { font-size: 0.58rem; font-weight: 700; padding: 2px 6px; border-radius: 5px; white-space: nowrap; }
-.bv { background: var(–green-lt); color: #15803d; }
-.bt { background: var(–amber-lt); color: #92400e; }
-.bb { background: var(–blue-lt); color: #1d4ed8; }
+.bv { background: var(--green-lt); color: #15803d; }
+.bt { background: var(--amber-lt); color: #92400e; }
+.bb { background: var(--blue-lt); color: #1d4ed8; }
 
 /* ── AVOID ITEMS ── */
 .avoid {
-background: #fff7f7; border: 1px solid #fecaca;
-border-radius: var(–radius-sm); padding: 9px 12px;
-display: flex; align-items: flex-start; gap: 9px; margin-bottom: 6px;
+  background: #fff7f7; border: 1px solid #fecaca;
+  border-radius: var(--radius-sm); padding: 9px 12px;
+  display: flex; align-items: flex-start; gap: 9px; margin-bottom: 6px;
 }
-.avoid-dot { width: 5px; height: 5px; border-radius: 50%; background: var(–pink); flex-shrink: 0; margin-top: 5px; }
+.avoid-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--pink); flex-shrink: 0; margin-top: 5px; }
 .avoid-text { font-size: 0.79rem; font-weight: 600; }
-.avoid-detail { font-size: 0.71rem; color: var(–text2); margin-top: 1px; }
+.avoid-detail { font-size: 0.71rem; color: var(--text2); margin-top: 1px; }
 
 /* ── SECTION HEADING ── */
-.sec-h { font-family: ‘Playfair Display’, serif; font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.sec-h { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
 .sec-icon { width: 26px; height: 26px; border-radius: 7px; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; flex-shrink: 0; }
 .section-block { margin-bottom: 20px; }
 
 /* ── LEGEND ── */
 .legend { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
-.leg { display: flex; align-items: center; gap: 4px; font-size: 0.69rem; color: var(–text2); }
+.leg { display: flex; align-items: center; gap: 4px; font-size: 0.69rem; color: var(--text2); }
 
 /* ── RESET BTN ── */
 .ghost-btn {
-display: block; width: 100%; padding: 11px; background: var(–surface2);
-border: 1px solid var(–border); border-radius: var(–radius-sm);
-color: var(–text2); font-family: ‘Plus Jakarta Sans’, sans-serif;
-font-size: 0.8rem; font-weight: 600; cursor: pointer; margin-top: 8px;
+  display: block; width: 100%; padding: 11px; background: var(--surface2);
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+  color: var(--text2); font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.8rem; font-weight: 600; cursor: pointer; margin-top: 8px;
 }
-.ghost-btn.danger { border-color: #fca5a5; color: var(–red); background: #fff5f5; }
+.ghost-btn.danger { border-color: #fca5a5; color: var(--red); background: #fff5f5; }
 
 /* ── LOG PAGE ── */
 .api-banner {
-background: #fffbeb; border: 1px solid #fde68a;
-border-radius: var(–radius-sm); padding: 13px;
-font-size: 0.77rem; color: #92400e; line-height: 1.5; margin-bottom: 12px;
+  background: #fffbeb; border: 1px solid #fde68a;
+  border-radius: var(--radius-sm); padding: 13px;
+  font-size: 0.77rem; color: #92400e; line-height: 1.5; margin-bottom: 12px;
 }
 .api-ok { background: #f0fdf4; border: 1px solid #86efac; color: #15803d; }
 .api-input {
-width: 100%; background: var(–surface2); border: 1px solid var(–border);
-border-radius: var(–radius-sm); padding: 10px 12px; color: var(–text);
-font-family: ‘Plus Jakarta Sans’, sans-serif; font-size: 0.82rem;
-margin: 8px 0 6px;
+  width: 100%; background: var(--surface2); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 10px 12px; color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.82rem;
+  margin: 8px 0 6px;
 }
-.api-input::placeholder { color: var(–text3); }
+.api-input::placeholder { color: var(--text3); }
 .primary-btn {
-width: 100%; padding: 11px; background: var(–green); border: none;
-border-radius: var(–radius-sm); color: #fff;
-font-family: ‘Plus Jakarta Sans’, sans-serif; font-size: 0.84rem;
-font-weight: 700; cursor: pointer;
+  width: 100%; padding: 11px; background: var(--green); border: none;
+  border-radius: var(--radius-sm); color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.84rem;
+  font-weight: 700; cursor: pointer;
 }
 
 .metric-card {
-background: var(–surface); border: 1px solid var(–border);
-border-radius: var(–radius); padding: 13px; margin-bottom: 10px;
-box-shadow: var(–shadow);
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 13px; margin-bottom: 10px;
+  box-shadow: var(--shadow);
 }
 .metric-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
 .metric-name { font-weight: 600; font-size: 0.86rem; display: flex; align-items: center; gap: 6px; }
-.metric-goal { font-size: 0.69rem; color: var(–text3); }
+.metric-goal { font-size: 0.69rem; color: var(--text3); }
 .stepper-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 7px; }
 .stepper { display: flex; align-items: center; gap: 0; }
 .step-btn {
-width: 33px; height: 33px; border-radius: 8px; border: 1px solid var(–border);
-background: var(–surface2); color: var(–text); font-size: 1.1rem;
-font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center;
+  width: 33px; height: 33px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--surface2); color: var(--text); font-size: 1.1rem;
+  font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center;
 }
 .step-btn:active { background: #e2e8f0; }
-.step-val { font-family: ‘Playfair Display’, serif; font-size: 1.2rem; font-weight: 700; min-width: 50px; text-align: center; }
+.step-val { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; min-width: 50px; text-align: center; }
 .met-pct { font-size: 0.73rem; font-weight: 700; }
 .met-bar-track { height: 5px; background: #e2e8f0; border-radius: 3px; overflow: hidden; }
 .met-bar-fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
 .photo-row { display: flex; gap: 6px; margin-top: 8px; }
 .photo-btn {
-flex: 1; padding: 7px; border-radius: 7px; border: 1px solid var(–border);
-background: var(–
+  flex: 1; padding: 7px; border-radius: 7px; border: 1px solid var(--border);
+  background: var(--surface2); color: var(--text2); font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.73rem; font-weight: 600; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; gap: 4px;
+}
+.photo-btn.cam { border-color: #bae6fd; color: #0284c7; background: #f0f9ff; }
+.photo-btn.gal { border-color: #c4b5fd; color: #7c3aed; background: #faf5ff; }
+.note-ta {
+  width: 100%; background: var(--surface2); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 10px 12px; color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.82rem;
+  resize: none; margin-top: 6px; line-height: 1.5;
+}
+.note-ta::placeholder { color: var(--text3); }
+
+/* release tracker — hidden section */
+.release-section {
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 12px; margin-top: 6px;
+}
+.release-row { display: flex; align-items: center; justify-content: space-between; }
+.release-lbl { font-size: 0.8rem; font-weight: 600; color: var(--text2); }
+.release-val { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--purple); }
+.release-note { font-size: 0.7rem; color: var(--text3); margin-top: 4px; }
+
+/* ── AI OVERLAY ── */
+.overlay {
+  position: fixed; inset: 0; background: rgba(15,23,42,0.55);
+  z-index: 200; display: none; align-items: center; justify-content: center; padding: 20px;
+}
+.overlay.on { display: flex; }
+.overlay-box {
+  background: var(--surface); border-radius: 18px; padding: 20px;
+  width: 100%; max-width: 360px; box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+.overlay-box h3 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; margin-bottom: 10px; }
+.ai-preview { width: 100%; border-radius: 10px; margin-bottom: 12px; max-height: 200px; object-fit: cover; }
+.ai-result { background: #f0fdf4; border: 1px solid #86efac; border-radius: 9px; padding: 12px; margin-bottom: 12px; }
+.ai-result-val { font-weight: 700; font-size: 0.93rem; color: #15803d; margin-bottom: 3px; }
+.ai-result-note { font-size: 0.76rem; color: var(--text2); line-height: 1.4; }
+.ai-err { background: #fef2f2; border: 1px solid #fca5a5; border-radius: 9px; padding: 12px; margin-bottom: 12px; font-size: 0.78rem; color: var(--red); }
+.ai-loading { text-align: center; padding: 24px 0; }
+.spin { font-size: 2rem; display: inline-block; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.ai-loading p { font-size: 0.8rem; color: var(--text2); margin-top: 10px; }
+.overlay-btns { display: flex; gap: 8px; }
+.ok-btn { flex: 1; padding: 11px; border-radius: 9px; border: none; background: var(--green); color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.84rem; font-weight: 700; cursor: pointer; }
+.cancel-btn { flex: 1; padding: 11px; border-radius: 9px; border: 1px solid var(--border); background: var(--surface2); color: var(--text2); font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.84rem; font-weight: 600; cursor: pointer; }
+
+/* ── DASHBOARD ── */
+.dtabs { display: flex; gap: 5px; margin-bottom: 14px; }
+.dtab { flex: 1; padding: 8px 4px; border-radius: 8px; font-size: 0.73rem; font-weight: 600; text-align: center; cursor: pointer; border: 1px solid var(--border); background: var(--surface); color: var(--text2); }
+.dtab.on { background: var(--blue); color: #fff; border-color: var(--blue); }
+.dash-h { font-family: 'Playfair Display', serif; font-size: 0.93rem; font-weight: 700; margin: 16px 0 9px; }
+.dash-h:first-child { margin-top: 0; }
+.bar-chart { display: flex; align-items: flex-end; gap: 4px; height: 90px; margin-bottom: 5px; }
+.bar-col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.bar { width: 100%; border-radius: 3px 3px 0 0; min-height: 3px; }
+.bar-v { font-size: 0.54rem; color: var(--green); font-weight: 700; }
+.bar-l { font-size: 0.56rem; color: var(--text3); font-weight: 600; }
+.met-sum { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px; margin-bottom: 7px; box-shadow: var(--shadow); }
+.met-sum-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.met-sum-name { font-weight: 600; font-size: 0.83rem; }
+.met-sum-avg { font-size: 0.78rem; font-weight: 700; }
+.mini-bars { display: flex; gap: 3px; align-items: flex-end; height: 36px; }
+.mini-bar { flex: 1; border-radius: 2px 2px 0 0; min-height: 2px; }
+.cal-grid { display: grid; grid-template-columns: repeat(7,1fr); gap: 5px; margin-bottom: 14px; }
+.cal-lbl { font-size: 0.6rem; font-weight: 700; color: var(--text3); text-align: center; padding-bottom: 3px; }
+.cal-cell { aspect-ratio: 1; border-radius: 7px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--surface2); border: 1px solid var(--border); }
+.cal-cell.today { border-color: var(--green); border-width: 2px; }
+.cal-cell.good { background: #dcfce7; border-color: #86efac; }
+.cal-cell.ok { background: #f0fdf4; border-color: #bbf7d0; }
+.cal-cell.future { opacity: 0.25; }
+.cal-n { font-size: 0.7rem; font-weight: 700; }
+.cal-p { font-size: 0.5rem; color: var(--green); }
+
+/* ── HISTORY ── */
+.hist-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px; margin-bottom: 8px; box-shadow: var(--shadow); }
+.hist-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
+.hist-date { font-weight: 700; font-size: 0.81rem; }
+.hist-day { font-size: 0.67rem; color: var(--text3); margin-top: 1px; }
+.hist-pct { font-size: 0.8rem; font-weight: 700; color: var(--green); }
+.hist-track { height: 4px; background: #e2e8f0; border-radius: 2px; overflow: hidden; margin-bottom: 7px; }
+.hist-fill { height: 100%; border-radius: 2px; background: linear-gradient(90deg, var(--green), var(--teal)); }
+.hist-chips { display: flex; gap: 5px; flex-wrap: wrap; }
+.hist-chip { font-size: 0.66rem; color: var(--text2); background: var(--surface2); padding: 2px 7px; border-radius: 5px; border: 1px solid var(--border); }
+.hist-note { margin-top: 7px; font-size: 0.72rem; color: var(--text2); font-style: italic; line-height: 1.4; }
+.empty { text-align: center; padding: 36px 16px; color: var(--text3); font-size: 0.82rem; }
+.empty .em { font-size: 2.4rem; margin-bottom: 8px; }
+
+/* ── COACH ── */
+.coach-hero {
+  background: linear-gradient(135deg, #f0fdf4, #dbeafe);
+  border: 1px solid #86efac; border-radius: var(--radius); padding: 16px;
+  margin-bottom: 12px;
+}
+.coach-hero-top { display: flex; align-items: center; gap: 11px; margin-bottom: 12px; }
+.coach-avatar { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, var(--green), var(--teal)); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; }
+.coach-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; }
+.coach-sub { font-size: 0.7rem; color: var(--text2); margin-top: 2px; }
+.coach-scores { display: flex; gap: 8px; }
+.coach-score { flex: 1; background: rgba(255,255,255,0.8); border: 1px solid #bbf7d0; border-radius: 9px; padding: 10px 6px; text-align: center; }
+.coach-score-n { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--green); line-height: 1; }
+.coach-score-l { font-size: 0.61rem; color: var(--text2); margin-top: 2px; }
+.metric-status-list { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 12px; box-shadow: var(--shadow); }
+.ms-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 13px; border-bottom: 1px solid var(--border); font-size: 0.81rem; }
+.ms-row:last-child { border-bottom: none; }
+.ms-name { display: flex; align-items: center; gap: 7px; font-weight: 500; }
+.ms-val { font-size: 0.71rem; color: var(--text3); }
+.ms-badge { font-size: 0.69rem; font-weight: 700; padding: 2px 8px; border-radius: 6px; }
+.ms-great { background: #dcfce7; color: #15803d; }
+.ms-ok { background: #fef9c3; color: #854d0e; }
+.ms-low { background: #fee2e2; color: #b91c1c; }
+.ms-none { background: #f1f5f9; color: #64748b; }
+.gen-btn {
+  width: 100%; padding: 14px; border: none; border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--green), var(--teal));
+  color: #fff; font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9rem; font-weight: 700; cursor: pointer; margin-bottom: 12px;
+  box-shadow: 0 4px 14px rgba(22,163,74,0.3);
+}
+.gen-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.gen-btn:active { transform: scale(0.99); }
+.coach-no-key { background: #fffbeb; border: 1px solid #fde68a; border-radius: var(--radius-sm); padding: 13px; font-size: 0.78rem; color: #92400e; line-height: 1.5; margin-bottom: 12px; text-align: center; }
+.summary-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; box-shadow: var(--shadow); }
+.summary-label { font-size: 0.67rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text3); margin-bottom: 10px; }
+.summary-body { font-size: 0.83rem; line-height: 1.75; color: var(--text); white-space: pre-wrap; }
+.coach-loading { text-align: center; padding: 28px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+.coach-loading p { font-size: 0.81rem; color: var(--text2); margin-top: 10px; line-height: 1.5; }
+
+input[type=file] { display: none; }
+</style>
+</head>
+<body>
+
+<header class="app-header">
+  <h1>30-Day Program</h1>
+  <p>Volume · Taste · Daily Tracking</p>
+</header>
+
+<input type="file" id="file-cam" accept="image/*" capture="environment">
+<input type="file" id="file-gal" accept="image/*">
+
+<div class="overlay" id="ai-overlay">
+  <div class="overlay-box">
+    <h3 id="ov-title">Analysing...</h3>
+    <div id="ov-body"></div>
+  </div>
+</div>
+
+<!-- TODAY -->
+<div class="page on" id="pg-today">
+  <div id="today-content"></div>
+</div>
+
+<!-- LOG -->
+<div class="page" id="pg-log">
+  <div id="log-content"></div>
+</div>
+
+<!-- DASHBOARD -->
+<div class="page" id="pg-dash">
+  <div id="dash-content"></div>
+</div>
+
+<!-- HISTORY -->
+<div class="page" id="pg-history">
+  <div id="history-content"></div>
+</div>
+
+<!-- COACH -->
+<div class="page" id="pg-coach">
+  <div id="coach-content"></div>
+</div>
+
+<nav class="bottom-nav">
+  <div class="bnav on" id="bn-today" onclick="nav('today')"><span class="bi">✅</span>Today</div>
+  <div class="bnav" id="bn-log" onclick="nav('log')"><span class="bi">📝</span>Log</div>
+  <div class="bnav" id="bn-dash" onclick="nav('dash')"><span class="bi">📊</span>Dashboard</div>
+  <div class="bnav" id="bn-history" onclick="nav('history')"><span class="bi">📅</span>History</div>
+  <div class="bnav" id="bn-coach" onclick="nav('coach')"><span class="bi">🤖</span>Coach</div>
+</nav>
+
+<script>
+'use strict';
+
+// ─────────────────────────────────────────────────────────────
+// TASK DATA
+// ─────────────────────────────────────────────────────────────
+const TASKS = {
+  morning: { label:'🌅 Morning', sections:[
+    { title:'Wake Up', icon:'🌤️', bg:'#422006', items:[
+      { name:'500ml water immediately', detail:'Before anything else — rehydrate after sleep', time:'6:30 AM', tag:'both' },
+      { name:'Pineapple smoothie', detail:'1 cup pineapple + berries + banana + water', time:'6:45 AM', tag:'taste' },
+      { name:'3 stalks celery (or juice)', detail:'On empty stomach. Apigenin supports testosterone.', time:'7:00 AM', tag:'vol' },
+      { name:'Take all supplements', detail:'Zinc · Lecithin · Vit D · Multivitamin', time:'7:30 AM', tag:'vol' },
+      { name:'High-protein breakfast', detail:'Eggs, pumpkin seeds, oats. Add cinnamon for taste.', time:'7:30 AM', tag:'both' },
+    ]}
+  ]},
+  daytime: { label:'☀️ Daytime', sections:[
+    { title:'Hydration', icon:'💧', bg:'#164e63', items:[
+      { name:'Mid-morning water (500ml)', detail:'Semen is mostly fluid — stay hydrated.', time:'10:00 AM', tag:'both' },
+      { name:'Afternoon water (500ml)', detail:'Keep a bottle with you', time:'1:00 PM', tag:'both' },
+      { name:'Pre-dinner water (500ml)', detail:'Hydrate before your evening meal', time:'5:30 PM', tag:'both' },
+    ]},
+    { title:'Meals', icon:'🥗', bg:'#14532d', items:[
+      { name:'Citrus fruit serving', detail:'Orange, grapefruit, or kiwi. Vitamin C + sweetness.', time:'11:00 AM', tag:'taste' },
+      { name:'High-protein zinc-rich lunch', detail:'Fish or chicken (150g+) + chickpeas + leafy greens', time:'12:30 PM', tag:'both' },
+      { name:'Omega-3 + Vitamin C supplement', detail:'1,000mg fish oil + 500mg Vit C with lunch', time:'12:30 PM', tag:'vol' },
+      { name:'Afternoon snack', detail:'Berries, watermelon, pumpkin seeds, or Brazil nuts', time:'3:30 PM', tag:'both' },
+      { name:'Nutrient-dense dinner', detail:'Salmon + leafy greens + quinoa or sweet potato', time:'7:00 PM', tag:'both' },
+    ]}
+  ]},
+  supps: { label:'💊 Supplements', sections:[
+    { title:'Morning', icon:'🌅', bg:'#312e81', items:[
+      { name:'Zinc — 30mg', detail:'Core for semen production. Take with food.', time:'Breakfast', tag:'vol' },
+      { name:'Lecithin — 1,200mg', detail:'Most cited supplement for volume specifically.', time:'Breakfast', tag:'vol' },
+      { name:'Vitamin D — 2,000 IU', detail:'Supports testosterone production.', time:'Breakfast', tag:'vol' },
+      { name:'Multivitamin', detail:'Fills folate, vitamin E, selenium gaps.', time:'Breakfast', tag:'vol' },
+    ]},
+    { title:'Midday', icon:'☀️', bg:'#164e63', items:[
+      { name:'Omega-3 / Fish Oil — 1,000mg', detail:'Reproductive health and hormone balance.', time:'Lunch', tag:'vol' },
+      { name:'Vitamin C — 500mg', detail:'Antioxidant protection. Skip if eating citrus.', time:'Lunch', tag:'vol' },
+    ]},
+  ]},
+  exercise: { label:'🏋️ Exercise', sections:[
+    { title:'Daily Movement', icon:'💪', bg:'#7f1d1d', items:[
+      { name:'Workout (40–60 min)', detail:'Strength or cardio. Compound lifts boost testosterone.', time:'Morning/PM', tag:'vol' },
+      { name:'7,000+ steps', detail:'Movement supports circulation and hormone balance.', time:'All day', tag:'vol' },
+      { name:'10 min stretch / mobility', detail:'Hip openers, lower body. Supports pelvic blood flow.', time:'Post-workout', tag:'vol' },
+    ]},
+    { title:'Weekly Plan', icon:'📅', bg:'#312e81', items:[
+      { name:'Mon/Wed/Fri — Strength', detail:'Squats, deadlifts, bench, rows.', time:'40–50 min', tag:'vol' },
+      { name:'Tue/Thu — Cardio', detail:'Jogging, cycling, or swimming.', time:'30–40 min', tag:'vol' },
+      { name:'Sat — Active recovery', detail:'Light walk, yoga, or stretching.', time:'30 min', tag:'vol' },
+      { name:'Sun — Full rest', detail:'Recovery is when hormones rebuild.', time:'Rest', tag:'vol' },
+    ]}
+  ]},
+  evening: { label:'🌙 Evening', sections:[
+    { title:'Wind Down', icon:'🌙', bg:'#581c87', items:[
+      { name:'Evening water (500ml)', detail:'Finish 1hr before bed.', time:'8:00 PM', tag:'both' },
+      { name:'Dim lights by 9 PM', detail:'Signals melatonin. Avoid bright overhead lights.', time:'9:00 PM', tag:'vol' },
+      { name:'No screens 30 min before bed', detail:'Blue light suppresses melatonin and deep sleep.', time:'9:30 PM', tag:'vol' },
+      { name:'Cool bedroom (18–20°C)', detail:'Supports testosterone production during sleep.', time:'Before bed', tag:'vol' },
+      { name:'Loose boxers or sleep naked', detail:'Keep testicular temperature cool overnight.', time:'Bedtime', tag:'vol' },
+      { name:'7–9 hours sleep', detail:'Most testosterone is made during deep sleep.', time:'10:00 PM', tag:'vol' },
+    ]},
+    { title:'Avoid Daily', icon:'🚫', bg:'#3f3f46', avoids:[
+      { text:'Alcohol', detail:'Lowers testosterone AND worsens taste', tag:'both' },
+      { text:'Smoking / nicotine', detail:'Reduces blood flow to reproductive organs', tag:'vol' },
+      { text:'Red meat as main protein', detail:'Swap for fish or chicken — better for taste', tag:'taste' },
+      { text:'Asparagus, garlic, raw onion', detail:'Sulfur compounds strongly affect taste', tag:'taste' },
+      { text:'Junk food / processed food', detail:'High sodium worsens taste significantly', tag:'taste' },
+      { text:'Caffeine after 2 PM', detail:'Protects sleep quality. Morning coffee is fine.', tag:'vol' },
+      { text:'Laptop on lap / hot baths / saunas', detail:'Prolonged heat damages sperm production.', tag:'vol' },
+    ]}
+  ]}
+};
+const TAB_ORDER = ['morning','daytime','supps','exercise','evening'];
+
+// ─────────────────────────────────────────────────────────────
+// METRICS (public) + release (private, stored separately)
+// ─────────────────────────────────────────────────────────────
+const METRICS = [
+  { id:'water',    name:'Water',     icon:'💧', unit:'ml',    target:2500, step:250,  max:4000, color:'#0ea5e9',
+    hint:'Water bottles, glasses. Standard glass=250ml, small bottle=500ml, large=750ml.' },
+  { id:'protein',  name:'Protein',   icon:'🥩', unit:'g',     target:150,  step:5,    max:300,  color:'#ef4444',
+    hint:'Food labels, MyFitnessPal screenshots, meal photos. Chicken breast 150g≈45g, egg≈6g, protein shake≈25g.' },
+  { id:'sleep',    name:'Sleep',     icon:'😴', unit:'hrs',   target:8,    step:0.5,  max:12,   color:'#8b5cf6',
+    hint:'Apple Health, Fitbit, Oura, Garmin sleep tracking screenshots. Find total sleep hours.' },
+  { id:'steps',    name:'Steps',     icon:'🚶', unit:'k',     target:7,    step:0.5,  max:25,   color:'#16a34a',
+    hint:'Apple Watch, iPhone Health, Fitbit step count screenshots. Return in thousands (8500=8.5).' },
+  { id:'pineapple',name:'Pineapple', icon:'🍍', unit:'cups',  target:1,    step:0.5,  max:3,    color:'#eab308',
+    hint:'Pineapple fruit, juice, smoothies. Estimate cups consumed today.' },
+  { id:'celery',   name:'Celery',    icon:'🥬', unit:'stalks',target:3,    step:1,    max:8,    color:'#22c55e',
+    hint:'Celery stalks, juice. Count stalks or estimate from juice glass (≈4 stalks).' },
+  { id:'workout',  name:'Workout',   icon:'🏋️', unit:'min',   target:45,   step:5,    max:120,  color:'#f97316',
+    hint:'Gym photos, Nike Run, Strava, Apple Fitness screenshots. Estimate workout minutes.' },
+  { id:'mood',     name:'Energy/Mood',icon:'⚡',unit:'/10',   target:7,    step:1,    max:10,   color:'#06b6d4',
+    hint:'Mood or energy tracking apps, wellness screenshots. Rate 1-10.' },
+];
+
+// ─────────────────────────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────────────────────────
+let state = {
+  checked: {},        // task checkboxes
+  history: {},        // { 'YYYY-MM-DD': { pct, metrics:{}, note, coachSummary } }
+  startDate: null,
+  apiKey: '',
+  release: {          // hidden release tracking
+    lastDate: null,   // 'YYYY-MM-DD' of last release
+    daysSince: 0
+  }
+};
+let currentPage = 'today';
+let currentTaskTab = 'morning';
+let dashPeriod = 'daily';
+let aiActiveMetric = null;
+let aiPendingValue = null;
+
+function todayKey() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function fmtKey(d) {
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+// Storage keys — try v8 first, migrate from older versions if needed
+const STORE_KEY = 'prog_v8';
+const OLD_KEYS = ['opt_prog_v6', 'opt_prog_v5', 'opt_prog_v4'];
+
+function load() {
+  // Try primary key first
+  let raw = null;
+  try { raw = localStorage.getItem(STORE_KEY); } catch(e) {}
+
+  // If nothing found, try migrating from older versions
+  if (!raw) {
+    for (const oldKey of OLD_KEYS) {
+      try {
+        const old = localStorage.getItem(oldKey);
+        if (old) { raw = old; console.log('Migrated from', oldKey); break; }
+      } catch(e) {}
+    }
+  }
+
+  if (raw) {
+    try {
+      const d = JSON.parse(raw);
+      state.checked = d.checked || {};
+      state.history = d.history || {};
+      state.startDate = d.startDate || todayKey();
+      state.apiKey = d.apiKey || '';
+      state.release = d.release || { lastDate: null, daysSince: 0 };
+      // Ensure all history entries have coachSummary field
+      Object.keys(state.history).forEach(k => {
+        if (!state.history[k].coachSummary) state.history[k].coachSummary = '';
+      });
+    } catch(e) {
+      console.error('Load error:', e);
+      state.startDate = todayKey();
+    }
+  } else {
+    state.startDate = todayKey();
+  }
+}
+
+function save() {
+  try {
+    const today = todayKey();
+    if (!state.history[today]) state.history[today] = { pct:0, metrics:{}, note:'', coachSummary:'' };
+    state.history[today].pct = calcPct();
+    const serialized = JSON.stringify(state);
+    localStorage.setItem(STORE_KEY, serialized);
+    // Verify it actually saved by reading it back
+    const verify = localStorage.getItem(STORE_KEY);
+    if (!verify) throw new Error('Storage verification failed');
+  } catch(e) {
+    console.error('Save error:', e);
+    // Show a subtle warning in the header if storage fails
+    const header = document.querySelector('.app-header p');
+    if (header && !header.dataset.warned) {
+      header.textContent = '⚠️ Storage unavailable — data will not persist';
+      header.style.color = '#dc2626';
+      header.dataset.warned = '1';
+    }
+  }
+}
+
+function getTodayMetrics() {
+  const t = todayKey();
+  return (state.history[t] && state.history[t].metrics) ? state.history[t].metrics : {};
+}
+function setMetric(id, val) {
+  const t = todayKey();
+  if (!state.history[t]) state.history[t] = { pct:0, metrics:{}, note:'', coachSummary:'' };
+  state.history[t].metrics[id] = val;
+  save();
+}
+function getTodayNote() {
+  const t = todayKey();
+  return (state.history[t] && state.history[t].note) ? state.history[t].note : '';
+}
+function setNote(v) {
+  const t = todayKey();
+  if (!state.history[t]) state.history[t] = { pct:0, metrics:{}, note:'', coachSummary:'' };
+  state.history[t].note = v;
+  save();
+}
+function calcDaysSinceRelease() {
+  if (!state.release.lastDate) return null;
+  const last = new Date(state.release.lastDate + 'T00:00:00');
+  const now = new Date(); now.setHours(0,0,0,0);
+  return Math.floor((now - last) / 86400000);
+}
+
+// ─────────────────────────────────────────────────────────────
+// CALCULATIONS
+// ─────────────────────────────────────────────────────────────
+function taskId(tab, si, ti) { return `${tab}_${si}_${ti}`; }
+function allTaskIds() {
+  const ids = [];
+  Object.entries(TASKS).forEach(([tab, data]) =>
+    data.sections.forEach((sec, si) =>
+      (sec.items || []).forEach((_, ti) => ids.push(taskId(tab, si, ti)))
+    )
+  );
+  return ids;
+}
+function calcPct() {
+  const all = allTaskIds();
+  return Math.round(all.filter(i => state.checked[i]).length / all.length * 100);
+}
+function calcStreak() {
+  let s = 0;
+  const d = new Date(); d.setDate(d.getDate() - 1);
+  while (true) {
+    const k = fmtKey(d);
+    if (state.history[k] && state.history[k].pct >= 50) { s++; d.setDate(d.getDate() - 1); } else break;
+  }
+  if (state.history[todayKey()] && state.history[todayKey()].pct >= 50) s++;
+  return s;
+}
+function calcBest() { return Object.values(state.history).reduce((b,h) => Math.max(b, h.pct || 0), 0); }
+function calcDayNum() {
+  if (!state.startDate) return 1;
+  const diff = Math.floor((new Date() - new Date(state.startDate + 'T00:00:00')) / 86400000) + 1;
+  return Math.min(Math.max(diff, 1), 30);
+}
+function dayLabel(k) { return new Date(k + 'T00:00:00').toLocaleDateString('en-GB', { weekday:'short', day:'numeric', month:'short' }); }
+function getDayNum(k) {
+  if (!state.startDate) return '?';
+  return Math.floor((new Date(k + 'T00:00:00') - new Date(state.startDate + 'T00:00:00')) / 86400000) + 1;
+}
+
+// ─────────────────────────────────────────────────────────────
+// NAV
+// ─────────────────────────────────────────────────────────────
+function nav(page) {
+  currentPage = page;
+  ['today','log','dash','history','coach'].forEach(p => {
+    document.getElementById('pg-' + p).classList.toggle('on', p === page);
+    document.getElementById('bn-' + p).classList.toggle('on', p === page);
+  });
+  if (page === 'today') renderToday();
+  else if (page === 'log') renderLog();
+  else if (page === 'dash') renderDash();
+  else if (page === 'history') renderHistory();
+  else renderCoach();
+}
+
+// ─────────────────────────────────────────────────────────────
+// BADGE + UTILS
+// ─────────────────────────────────────────────────────────────
+function badge(tag) {
+  if (!tag) return '';
+  const map = { vol:['bv','📈'], taste:['bt','🍍'], both:['bb','⚡'] };
+  const [cls,lbl] = map[tag] || [];
+  return cls ? `<span class="badge ${cls}">${lbl}</span>` : '';
+}
+
+// ─────────────────────────────────────────────────────────────
+// TODAY
+// ─────────────────────────────────────────────────────────────
+function switchTaskTab(t) { currentTaskTab = t; renderToday(); }
+function toggleTask(tab, si, ti) {
+  const k = taskId(tab, si, ti);
+  state.checked[k] = !state.checked[k];
+  save(); renderToday();
+}
+
+function renderToday() {
+  const p = calcPct(), streak = calcStreak(), day = calcDayNum(), isP1 = day <= 14;
+  const data = TASKS[currentTaskTab];
+
+  let h = `
+    <div class="card">
+      <div class="prog-row"><span class="prog-lbl">Today — Day ${day}/30</span><span class="prog-pct">${p}%</span></div>
+      <div class="prog-track"><div class="prog-fill" style="width:${p}%"></div></div>
+    </div>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-n">${streak}</div><div class="stat-l">🔥 Streak</div></div>
+      <div class="stat"><div class="stat-n">${day}</div><div class="stat-l">📅 Day</div></div>
+      <div class="stat"><div class="stat-n amber">${calcBest()}%</div><div class="stat-l">⭐ Best</div></div>
+    </div>
+    <div class="phase ${isP1?'g':'b'}">
+      <div class="phase-tag ${isP1?'g':'b'}">${isP1?'Phase 1 — Foundation':'Phase 2 — Optimise'}</div><br>
+      ${isP1
+        ? 'Lock in hydration, supplements, sleep, and loose underwear. Pineapple smoothie every morning.'
+        : 'Everything from phase 1 continues. Add consistent exercise. Abstain 2–3 days for best results. Taste changes appear within 3–5 days.'}
+    </div>
+    <div class="legend">
+      <div class="leg"><span class="badge bv">📈</span> Volume</div>
+      <div class="leg"><span class="badge bt">🍍</span> Taste</div>
+      <div class="leg"><span class="badge bb">⚡</span> Both</div>
+    </div>
+    <div class="ttabs">
+      ${TAB_ORDER.map(t => `<div class="ttab ${t===currentTaskTab?'on':''}" onclick="switchTaskTab('${t}')">${TASKS[t].label}</div>`).join('')}
+    </div>`;
+
+  data.sections.forEach((sec, si) => {
+    h += `<div class="section-block"><div class="sec-h"><div class="sec-icon" style="background:${sec.bg}">${sec.icon}</div>${sec.title}</div>`;
+    if (sec.items) {
+      h += `<div class="task-list">`;
+      sec.items.forEach((item, ti) => {
+        const k = taskId(currentTaskTab, si, ti), done = state.checked[k];
+        h += `<div class="task ${done?'done':''}" onclick="toggleTask('${currentTaskTab}',${si},${ti})">
+          <div class="chk">${done?'✓':''}</div>
+          <div class="task-body"><div class="task-name">${item.name}</div><div class="task-detail">${item.detail}</div></div>
+          <div class="task-right"><span class="task-time">${item.time}</span>${badge(item.tag)}</div>
+        </div>`;
+      });
+      h += `</div>`;
+    }
+    if (sec.avoids) {
+      sec.avoids.forEach(a => {
+        h += `<div class="avoid"><div class="avoid-dot"></div><div><div class="avoid-text">❌ ${a.text}</div><div class="avoid-detail">${a.detail}</div></div>${badge(a.tag)}</div>`;
+      });
+    }
+    h += `</div>`;
+  });
+
+  h += `<button class="ghost-btn" onclick="resetToday()">↻ Reset today's checkboxes</button>`;
+  document.getElementById('today-content').innerHTML = h;
+}
+
+// ─────────────────────────────────────────────────────────────
+// LOG
+// ─────────────────────────────────────────────────────────────
+function stepMetric(id, delta) {
+  const m = METRICS.find(x => x.id === id);
+  const cur = getTodayMetrics()[id] || 0;
+  const nv = Math.max(0, Math.min(m.max, Math.round((cur + delta) * 10) / 10));
+  setMetric(id, nv); renderLog();
+}
+function saveApiKey() {
+  const v = document.getElementById('api-inp').value.trim();
+  if (!v.startsWith('sk-ant-')) { alert('Key should start with sk-ant-'); return; }
+  state.apiKey = v; save(); renderLog();
+}
+function clearApiKey() { state.apiKey = ''; save(); renderLog(); }
+function saveNote() {
+  const ta = document.getElementById('note-ta');
+  if (ta) setNote(ta.value);
+  const btn = document.getElementById('note-save-btn');
+  if (btn) { btn.textContent = '✓ Saved'; setTimeout(() => btn.textContent = '💾 Save Note', 1500); }
+}
+function recordRelease() {
+  state.release.lastDate = todayKey();
+  save(); renderLog();
+}
+function resetLog() {
+  const t = todayKey();
+  if (state.history[t]) { state.history[t].metrics = {}; state.history[t].note = ''; }
+  save(); renderLog();
+}
+
+function renderLog() {
+  const m = getTodayMetrics(), note = getTodayNote();
+  const daysSince = calcDaysSinceRelease();
+
+  let h = '';
+
+  // API key
+  if (state.apiKey) {
+    h += `<div class="api-banner api-ok">🔑 API key saved — photo capture enabled &nbsp;<span style="cursor:pointer;color:#15803d;text-decoration:underline;font-weight:600;" onclick="clearApiKey()">Remove</span></div>`;
+  } else {
+    h += `<div class="card">
+      <div style="font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:700;margin-bottom:6px;">🔑 Enable Photo Capture</div>
+      <div style="font-size:0.77rem;color:var(--text2);line-height:1.5;margin-bottom:10px;">Enter your Anthropic API key to let Claude read your photos and auto-fill metrics. Stored only on your device.</div>
+      <input type="password" class="api-input" id="api-inp" placeholder="sk-ant-api03-...">
+      <button class="primary-btn" onclick="saveApiKey()">Save API Key</button>
+      <div style="margin-top:7px;font-size:0.7rem;color:var(--text3);">Get your key at console.anthropic.com · Each photo scan costs &lt;$0.01</div>
+    </div>`;
+  }
+
+  // Metrics
+  h += `<span class="slabel">Daily Metrics</span>`;
+  METRICS.forEach(met => {
+    const val = m[met.id] !== undefined ? m[met.id] : 0;
+    const pct = Math.min(100, Math.round((val / met.target) * 100));
+    const done = val >= met.target;
+    h += `<div class="metric-card">
+      <div class="metric-top">
+        <div class="metric-name">${met.icon} ${met.name}</div>
+        <div class="metric-goal">Goal: ${met.target} ${met.unit}</div>
+      </div>
+      <div class="stepper-row">
+        <div class="stepper">
+          <button class="step-btn" onclick="stepMetric('${met.id}',-${met.step})">−</button>
+          <div class="step-val" style="color:${done?'var(--green)':'var(--text)'}">${val}<span style="font-size:0.62rem;font-weight:500;color:var(--text3)"> ${met.unit}</span></div>
+          <button class="step-btn" onclick="stepMetric('${met.id}',${met.step})">+</button>
+        </div>
+        <div class="met-pct" style="color:${done?'var(--green)':'var(--text3)'}">${done?'✓ Done':pct+'%'}</div>
+      </div>
+      <div class="met-bar-track"><div class="met-bar-fill" style="width:${pct}%;background:${met.color}"></div></div>
+      ${state.apiKey ? `<div class="photo-row">
+        <button class="photo-btn cam" onclick="openCam('${met.id}')">📷 Camera</button>
+        <button class="photo-btn gal" onclick="openGal('${met.id}')">🖼 Gallery</button>
+      </div>` : ''}
+    </div>`;
+  });
+
+  // Daily note
+  h += `<span class="slabel">Daily Note</span>
+    <div class="card">
+      <textarea class="note-ta" id="note-ta" rows="3" placeholder="How are you feeling? Taste changes, energy, observations...">${note}</textarea>
+      <button class="primary-btn" id="note-save-btn" onclick="saveNote()" style="margin-top:8px;">💾 Save Note</button>
+    </div>`;
+
+  // Hidden release tracker
+  h += `<span class="slabel">Private Tracker</span>
+    <div class="card">
+      <div class="release-section">
+        <div class="release-row">
+          <div class="release-lbl">🗓️ Days since last release</div>
+          <div class="release-val">${daysSince !== null ? daysSince + ' days' : '—'}</div>
+        </div>
+        <div class="release-note">${daysSince === null ? 'Not recorded yet.' : daysSince < 2 ? 'Too soon — wait at least 2–3 days for best volume.' : daysSince <= 4 ? '✓ Optimal window for maximum volume.' : 'Getting long — consider this in your planning.'}</div>
+        <button class="ghost-btn" style="margin-top:10px;" onclick="recordRelease()">Record today as last release</button>
+      </div>
+    </div>`;
+
+  h += `<button class="ghost-btn danger" onclick="resetLog()">↻ Reset today's metrics</button>`;
+  document.getElementById('log-content').innerHTML = h;
+}
+
+// ─────────────────────────────────────────────────────────────
+// PHOTO / AI VISION
+// ─────────────────────────────────────────────────────────────
+function openCam(id) {
+  if (!state.apiKey) { alert('Add your API key first.'); return; }
+  aiActiveMetric = id;
+  document.getElementById('file-cam').click();
+}
+function openGal(id) {
+  if (!state.apiKey) { alert('Add your API key first.'); return; }
+  aiActiveMetric = id;
+  document.getElementById('file-gal').click();
+}
+
+document.getElementById('file-cam').addEventListener('change', e => { handleFile(e.target.files[0]); e.target.value=''; });
+document.getElementById('file-gal').addEventListener('change', e => { handleFile(e.target.files[0]); e.target.value=''; });
+
+function handleFile(file) {
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => analyseImage(ev.target.result, aiActiveMetric);
+  reader.readAsDataURL(file);
+}
+
+async function analyseImage(dataUrl, metId) {
+  const met = METRICS.find(x => x.id === metId);
+  const overlay = document.getElementById('ai-overlay');
+  const title = document.getElementById('ov-title');
+  const body = document.getElementById('ov-body');
+  overlay.classList.add('on');
+  title.textContent = `📸 Analysing for ${met.name}...`;
+  body.innerHTML = `<img src="${dataUrl}" class="ai-preview"><div class="ai-loading"><span class="spin">⚙️</span><p>Claude is reading your photo...</p></div>`;
+
+  try {
+    const b64 = dataUrl.split(',')[1];
+    const mime = dataUrl.split(';')[0].split(':')[1];
+    const resp = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type':'application/json', 'x-api-key':state.apiKey, 'anthropic-version':'2023-06-01', 'anthropic-dangerous-direct-browser-access':'true' },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514', max_tokens: 300,
+        messages: [{ role:'user', content:[
+          { type:'image', source:{ type:'base64', media_type:mime, data:b64 }},
+          { type:'text', text:`Extract health metric data from this image.\nMetric: ${met.name} (${met.unit})\nHint: ${met.hint}\nRespond ONLY with JSON: {"value":<number>,"confidence":"high|medium|low","explanation":"<one sentence>"}\nIf uncertain, use {"value":0,"confidence":"low","explanation":"Could not determine from image"}` }
+        ]}]
+      })
+    });
+    if (!resp.ok) { const e = await resp.json(); throw new Error(e.error?.message || 'API error'); }
+    const data = await resp.json();
+    const result = JSON.parse(data.content[0].text.trim());
+    aiPendingValue = result.value;
+    const confColor = result.confidence==='high'?'var(--green)':result.confidence==='medium'?'var(--amber)':'var(--orange)';
+    body.innerHTML = `<img src="${dataUrl}" class="ai-preview">
+      <div class="ai-result">
+        <div class="ai-result-val">${met.icon} ${met.name}: <strong>${result.value} ${met.unit}</strong></div>
+        <div class="ai-result-note">${result.explanation}</div>
+        <div style="font-size:0.68rem;margin-top:5px;color:${confColor};font-weight:600;">Confidence: ${result.confidence}</div>
+      </div>
+      <div class="overlay-btns">
+        <button class="ok-btn" onclick="confirmAi('${metId}')">✓ Use this value</button>
+        <button class="cancel-btn" onclick="closeOverlay()">Cancel</button>
+      </div>`;
+    title.textContent = '✨ AI Result';
+  } catch(err) {
+    body.innerHTML = `<img src="${dataUrl}" class="ai-preview"><div class="ai-err">⚠️ ${err.message}</div><div class="overlay-btns"><button class="cancel-btn" style="flex:1" onclick="closeOverlay()">Close</button></div>`;
+    title.textContent = '❌ Failed';
+  }
+}
+function confirmAi(metId) { if (aiPendingValue !== null) { setMetric(metId, aiPendingValue); } closeOverlay(); renderLog(); }
+function closeOverlay() { document.getElementById('ai-overlay').classList.remove('on'); aiActiveMetric=null; aiPendingValue=null; }
+
+// ─────────────────────────────────────────────────────────────
+// DASHBOARD
+// ─────────────────────────────────────────────────────────────
+function setDash(p) { dashPeriod = p; renderDash(); }
+function getDashEntries() {
+  const today = new Date(); today.setHours(0,0,0,0);
+  return Object.entries(state.history).filter(([k]) => {
+    const d = new Date(k + 'T00:00:00');
+    if (dashPeriod === 'daily') { const d7 = new Date(today); d7.setDate(today.getDate()-6); return d>=d7&&d<=today; }
+    if (dashPeriod === 'weekly') { const d28 = new Date(today); d28.setDate(today.getDate()-27); return d>=d28&&d<=today; }
+    return true;
+  }).sort((a,b) => a[0].localeCompare(b[0]));
+}
+
+function renderDash() {
+  const entries = getDashEntries();
+  const allE = Object.entries(state.history).filter(([,v]) => v.pct > 0);
+  const avg = allE.length ? Math.round(allE.reduce((s,[,v]) => s+(v.pct||0),0)/allE.length) : 0;
+
+  let h = `
+    <div class="dtabs">
+      <div class="dtab ${dashPeriod==='daily'?'on':''}" onclick="setDash('daily')">7 Days</div>
+      <div class="dtab ${dashPeriod==='weekly'?'on':''}" onclick="setDash('weekly')">4 Weeks</div>
+      <div class="dtab ${dashPeriod==='monthly'?'on':''}" onclick="setDash('monthly')">Full 30</div>
+    </div>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-n">${calcStreak()}</div><div class="stat-l">🔥 Streak</div></div>
+      <div class="stat"><div class="stat-n blue">${calcDayNum()}/30</div><div class="stat-l">📅 Day</div></div>
+      <div class="stat"><div class="stat-n amber">${avg}%</div><div class="stat-l">📊 Avg</div></div>
+    </div>`;
+
+  // Completion bars
+  h += `<div class="dash-h">✅ Completion Score</div>`;
+  if (!entries.length) {
+    h += `<div class="empty"><div class="em">📊</div>No data yet for this period.</div>`;
+  } else {
+    h += `<div class="card"><div class="bar-chart">`;
+    entries.forEach(([k,v]) => {
+      const p = v.pct||0, bh = Math.max(4, Math.round((p/100)*78));
+      const d = new Date(k+'T00:00:00');
+      const lbl = dashPeriod==='daily' ? d.toLocaleDateString('en-GB',{weekday:'short'})
+                : dashPeriod==='weekly' ? d.toLocaleDateString('en-GB',{day:'numeric',month:'short'})
+                : `D${getDayNum(k)}`;
+      const col = p>=80?'var(--green)':p>=50?'#86efac':'#e2e8f0';
+      h += `<div class="bar-col"><div class="bar-v">${p>0?p+'%':''}</div><div class="bar" style="height:${bh}px;background:${col}"></div><div class="bar-l">${lbl}</div></div>`;
+    });
+    h += `</div></div>`;
+
+    // Metric trends
+    h += `<div class="dash-h">📈 Metric Trends</div>`;
+    METRICS.forEach(met => {
+      const vals = entries.map(([,v]) => v.metrics && v.metrics[met.id] !== undefined ? v.metrics[met.id] : null).filter(x=>x!==null);
+      if (!vals.length) return;
+      const avg = Math.round((vals.reduce((s,v)=>s+v,0)/vals.length)*10)/10;
+      const pct = Math.min(100, Math.round((avg/met.target)*100));
+      const maxV = Math.max(...vals, met.target);
+      h += `<div class="met-sum">
+        <div class="met-sum-top">
+          <div class="met-sum-name">${met.icon} ${met.name}</div>
+          <div class="met-sum-avg" style="color:${met.color}">avg ${avg} ${met.unit}</div>
+        </div>
+        <div class="mini-bars">${vals.map(v=>`<div class="mini-bar" style="height:${Math.max(2,Math.round((v/maxV)*34))}px;background:${v>=met.target?met.color:'#e2e8f0'};flex:1"></div>`).join('')}</div>
+        <div style="display:flex;justify-content:space-between;margin-top:4px;">
+          <div style="font-size:0.67rem;color:var(--text3)">Target: ${met.target} ${met.unit}</div>
+          <div style="font-size:0.67rem;color:${pct>=100?'var(--green)':'var(--text3)'};">${pct}% of target</div>
+        </div>
+      </div>`;
+    });
+  }
+
+  // 30-day calendar
+  h += `<div class="dash-h">📅 30-Day Calendar</div><div class="cal-grid">`;
+  ['M','T','W','T','F','S','S'].forEach(d => { h += `<div class="cal-lbl">${d}</div>`; });
+  const start = state.startDate ? new Date(state.startDate+'T00:00:00') : new Date();
+  const todayD = new Date(); todayD.setHours(0,0,0,0);
+  const startDow = (start.getDay()+6)%7;
+  for (let i=0;i<startDow;i++) h+=`<div></div>`;
+  for (let i=0;i<30;i++) {
+    const d = new Date(start); d.setDate(start.getDate()+i); d.setHours(0,0,0,0);
+    const k = fmtKey(d), isToday=d.getTime()===todayD.getTime(), isFuture=d>todayD;
+    const rec = state.history[k], p = rec?rec.pct:0;
+    let cls='cal-cell';
+    if(isFuture) cls+=' future'; else if(p>=80) cls+=' good'; else if(p>=1) cls+=' ok';
+    if(isToday) cls+=' today';
+    h+=`<div class="${cls}"><div class="cal-n">${i+1}</div>${p>0?`<div class="cal-p">${p}%</div>`:''}</div>`;
+  }
+  h+=`</div>`;
+  document.getElementById('dash-content').innerHTML = h;
+}
+
+// ─────────────────────────────────────────────────────────────
+// HISTORY
+// ─────────────────────────────────────────────────────────────
+function renderHistory() {
+  const entries = Object.entries(state.history).sort((a,b)=>b[0].localeCompare(a[0]));
+  let h = `<span class="slabel">Daily Records</span>`;
+  if (!entries.length) {
+    h += `<div class="empty"><div class="em">📋</div>No records yet.<br>Complete tasks and log metrics to build your history.</div>`;
+  } else {
+    entries.forEach(([k,v]) => {
+      const p=v.pct||0, mets=v.metrics||{};
+      const chips = Object.keys(mets).filter(id=>mets[id]>0).map(id=>{
+        const met=METRICS.find(x=>x.id===id);
+        return met?`<div class="hist-chip">${met.icon} ${mets[id]} ${met.unit}</div>`:'';
+      }).join('');
+      h += `<div class="hist-card">
+        <div class="hist-top">
+          <div><div class="hist-date">${dayLabel(k)}</div><div class="hist-day">Day ${getDayNum(k)} of 30</div></div>
+          <div class="hist-pct">${p}%</div>
+        </div>
+        <div class="hist-track"><div class="hist-fill" style="width:${p}%"></div></div>
+        ${chips?`<div class="hist-chips">${chips}</div>`:''}
+        ${v.note?`<div class="hist-note">"${v.note}"</div>`:''}
+      </div>`;
+    });
+  }
+  h += `<button class="ghost-btn danger" onclick="confirmClear()">🗑 Clear all history</button>`;
+  document.getElementById('history-content').innerHTML = h;
+}
+
+// ─────────────────────────────────────────────────────────────
+// COACH
+// ─────────────────────────────────────────────────────────────
+function renderCoach() {
+  const todayM = getTodayMetrics();
+  const p = calcPct(), day = calcDayNum();
+  const today = todayKey();
+  const savedSummary = state.history[today] && state.history[today].coachSummary;
+  const daysSince = calcDaysSinceRelease();
+
+  let metHit=0;
+  let rowsH = METRICS.map(met => {
+    const val = todayM[met.id] !== undefined ? todayM[met.id] : null;
+    const pct = val !== null && val > 0 ? Math.round((val/met.target)*100) : null;
+    let cls, txt;
+    if (!val || val===0) { cls='ms-none'; txt='Not logged'; }
+    else if (pct>=100) { cls='ms-great'; txt='✓ Met'; metHit++; }
+    else if (pct>=60) { cls='ms-ok'; txt=pct+'%'; }
+    else { cls='ms-low'; txt=pct+'%'; }
+    return `<div class="ms-row">
+      <div class="ms-name">${met.icon} ${met.name}${val&&val>0?` <span class="ms-val">${val} ${met.unit}</span>`:''}
+      </div>
+      <span class="ms-badge ${cls}">${txt}</span>
+    </div>`;
+  }).join('');
+
+  const overall = Math.round((p*0.5) + (metHit/METRICS.length)*50);
+
+  let h = `
+    <div class="coach-hero">
+      <div class="coach-hero-top">
+        <div class="coach-avatar">🤖</div>
+        <div><div class="coach-title">Health Coach</div><div class="coach-sub">Day ${day} of 30 · AI-powered daily review</div></div>
+      </div>
+      <div class="coach-scores">
+        <div class="coach-score"><div class="coach-score-n">${p}%</div><div class="coach-score-l">Tasks done</div></div>
+        <div class="coach-score"><div class="coach-score-n">${overall}%</div><div class="coach-score-l">Overall score</div></div>
+        <div class="coach-score"><div class="coach-score-n">${metHit}/${METRICS.length}</div><div class="coach-score-l">Targets hit</div></div>
+      </div>
+    </div>
+    <div class="metric-status-list">${rowsH}</div>`;
+
+  if (!state.apiKey) {
+    h += `<div class="coach-no-key">🔑 Add your API key in the <strong>Log</strong> tab to unlock AI coaching summaries.</div>`;
+  } else {
+    h += `<button class="gen-btn" onclick="generateCoach()" id="gen-btn">🤖 Generate Today's Coach Summary</button>`;
+  }
+
+  if (savedSummary) {
+    h += `<div class="summary-card"><div class="summary-label">Today's Coach Summary</div><div class="summary-body">${savedSummary}</div></div>`;
+  }
+
+  h += `<div id="coach-out"></div>`;
+  document.getElementById('coach-content').innerHTML = h;
+}
+
+async function generateCoach() {
+  const btn = document.getElementById('gen-btn');
+  const out = document.getElementById('coach-out');
+  if (btn) { btn.disabled=true; btn.textContent='⏳ Reviewing your day...'; }
+
+  // Clear old summary immediately
+  const today = todayKey();
+  if (state.history[today]) { state.history[today].coachSummary = ''; save(); }
+
+  if (out) out.innerHTML=`<div class="coach-loading"><span class="spin">🤖</span><p>Analysing your metrics and tasks...<br>Preparing personalised feedback.</p></div>`;
+
+  const todayM = getTodayMetrics();
+  const p=calcPct(), day=calcDayNum(), streak=calcStreak(), note=getTodayNote();
+  const daysSince = calcDaysSinceRelease();
+
+  const metLines = METRICS.map(m => {
+    const val = todayM[m.id] !== undefined ? todayM[m.id] : 'not logged';
+    const status = typeof val==='number' ? (val>=m.target?'✓ TARGET MET':`${Math.round((val/m.target)*100)}% of target`) : 'NOT LOGGED';
+    return `• ${m.name}: ${val} ${m.unit} | Target: ${m.target} ${m.unit} | ${status}`;
+  }).join('\n');
+
+  const releaseContext = daysSince !== null ? `• Days since last release: ${daysSince} (optimal window is 2–4 days for maximum volume)` : '• Last release: not recorded';
+
+  const prompt = `You are a warm, expert men's health coach specialising in reproductive health optimisation. You are reviewing Jimmy's daily progress for Day ${day} of his 30-day program. His goals are to increase semen volume and improve taste through diet, lifestyle, and supplements.
+
+TODAY'S DATA:
+• Task completion: ${p}%
+• Current streak: ${streak} days
+• Day: ${day} of 30
+${releaseContext}
+
+METRICS vs TARGETS:
+${metLines}
+${note?`\nJimmy's note: "${note}"`:''}
+
+Write a personalised end-of-day health coaching summary with these exact sections:
+
+🌟 OVERALL ASSESSMENT
+2-3 honest, warm sentences summarising today.
+
+✅ TODAY'S WINS
+Specific things he did well — link to volume/taste goals.
+
+⚠️ NEEDS IMPROVEMENT  
+What fell short, why it matters scientifically, how to fix it tomorrow.
+
+💡 TOMORROW'S TOP 3 PRIORITIES
+Three concrete, specific, actionable things to focus on.
+
+🔬 HEALTH INSIGHT
+One fascinating science fact connecting today's specific choices to semen volume or taste.
+
+💪 COACH'S MESSAGE
+A brief, warm, personalised motivating sign-off.
+
+Be direct, specific, and science-informed. Reference his actual numbers. ~350 words.`;
+
+  try {
+    const resp = await fetch('https://api.anthropic.com/v1/messages', {
+      method:'POST',
+      headers:{ 'Content-Type':'application/json','x-api-key':state.apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true' },
+      body: JSON.stringify({ model:'claude-sonnet-4-20250514', max_tokens:1000, messages:[{role:'user',content:prompt}] })
+    });
+    if (!resp.ok) { const e=await resp.json(); throw new Error(e.error?.message||'API error'); }
+    const data = await resp.json();
+    const summary = data.content[0].text;
+
+    if (!state.history[today]) state.history[today]={pct:p,metrics:{},note:'',coachSummary:''};
+    state.history[today].coachSummary = summary;
+    save();
+
+    if (out) out.innerHTML=`<div class="summary-card"><div class="summary-label">Today's Coach Summary</div><div class="summary-body">${summary}</div></div>`;
+    if (btn) { btn.disabled=false; btn.textContent='🔄 Regenerate Summary'; }
+  } catch(err) {
+    if (out) out.innerHTML=`<div style="background:#fef2f2;border:1px solid #fca5a5;border-radius:10px;padding:13px;font-size:0.79rem;color:var(--red);">⚠️ ${err.message}</div>`;
+    if (btn) { btn.disabled=false; btn.textContent='🤖 Generate Today\'s Coach Summary'; }
+  }
+}
+
+// ─────────────────────────────────────────────────────────────
+// UTILS
+// ─────────────────────────────────────────────────────────────
+function resetToday() {
+  Object.keys(state.checked).forEach(k => delete state.checked[k]);
+  const t = todayKey();
+  if (state.history[t]) state.history[t].pct = 0;
+  save(); renderToday();
+}
+function confirmClear() {
+  if (confirm('Clear all history and records? This cannot be undone.')) {
+    state.history = {}; state.startDate = todayKey(); save(); renderHistory();
+  }
+}
+
+// ─────────────────────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────────────────────
+// Test storage availability first
+(function testStorage() {
+  try {
+    localStorage.setItem('_test', '1');
+    const ok = localStorage.getItem('_test') === '1';
+    localStorage.removeItem('_test');
+    if (!ok) throw new Error('Read-back failed');
+  } catch(e) {
+    setTimeout(() => {
+      const header = document.querySelector('.app-header p');
+      if (header) {
+        header.textContent = '⚠️ Open in Safari for data to save';
+        header.style.color = '#dc2626';
+        header.style.fontWeight = '600';
+      }
+    }, 100);
+  }
+})();
+
+load();
+renderToday();
+</script>
+</body>
+</html>
